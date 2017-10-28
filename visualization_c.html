@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <meta content="ie=edge" http-equiv="X-UA-Compatible">
+                    <title>
+                        Weather Analysis
+                    </title>
+                    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+                        <!-- Optional theme -->
+                        <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet">
+                            <link href="style.css" rel="stylesheet">
+                                <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js">
+                                </script>
+                                <!-- Latest compiled and minified JavaScript -->
+                                <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+                                </script>
+                            </link>
+                        </link>
+                    </link>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="page-background">
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+                                    <span class="sr-only">
+                                        Toggle navigation
+                                    </span>
+                                    <span class="icon-bar">
+                                    </span>
+                                    <span class="icon-bar">
+                                    </span>
+                                    <span class="icon-bar">
+                                    </span>
+                                </button>
+                                <div class="col-md-4 col-md-offset-10">
+                                    <a class="nav navbar-nav box1 font-one" href="web_dasboard.html">
+                                        <b>
+                                            Latitude
+                                        </b>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                </ul>
+                                <form class="navbar-form navbar-left">
+                                </form>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <li class="dropdown">
+                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                                                Plots
+                                                <span class="caret">
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="visualization_t.html">
+                                                        Max Temperature
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="visualization_h.html">
+                                                        Humidity
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="visualization_c.html">
+                                                        Cloudiness
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="visualization_w.html">
+                                                        Wind Speed
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </li>
+                                    <li>
+                                        <a href="comparison.html">
+                                            Comparison
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="data.html">
+                                            Data
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+            <div class="container" style="width:1100px">
+                <div class="row">
+                    <div class="col-md-7 box">
+                        <h1 class="st-text-lightgreen">
+                            <b>
+                                Cloudiness
+                            </b>
+                        </h1>
+                        <hr>
+                            <img alt="Latitude" class="img-square st-img-vm" height="250" src="output_data/Latitude_Cloudliness.png" width="250">
+                                <div class="st-para">
+                                    <br>
+                                        <p>
+                                            Based on the data, there does not seem to be any specific relationship between
+                                                        cloudiness and distance from equator.
+                                        </p>
+                                    </br>
+                                </div>
+                            </img>
+                        </hr>
+                    </div>
+                    <div class="col-md-4 box">
+                        <div class="row">
+                            <h1 class="st-text-lightgreen">
+                                <b>
+                                    Visualizations
+                                </b>
+                            </h1>
+                            <hr>
+                                <a href="visualization_t.html">
+                                    <img alt="Latitude" class="img-square st-img" src="output_data/Latitude_Max_temp.png">
+                                    </img>
+                                </a>
+                                <a href="visualization_h.html">
+                                    <img alt="Latitude" class="img-square st-img" src="output_data/Latitude_Humidity.png">
+                                    </img>
+                                </a>
+                                <a href="visualization_c.html">
+                                    <img alt="Latitude" class="img-square st-img" src="output_data/Latitude_Cloudliness.png">
+                                    </img>
+                                </a>
+                                <a href="visualization_w.html">
+                                    <img alt="Latitude" class="img-square st-img" src="output_data/Latitude_windspeed.png">
+                                    </img>
+                                </a>
+                            </hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="page-background">
+            <br>
+                <br>
+                    <br>
+                        <br>
+                        </br>
+                    </br>
+                </br>
+            </br>
+        </div>
+    </footer>
+</html>
